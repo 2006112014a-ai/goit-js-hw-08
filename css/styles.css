@@ -1,0 +1,51 @@
+* {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 24px;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+        max-width: 1128px;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+    }
+
+    .gallery-item {
+        overflow: hidden;
+    }
+
+    .gallery-link {
+        display: block;
+        text-decoration: none;
+    }
+
+    .gallery-image {
+        display: block;
+        width: 360px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .gallery-image:hover {
+        transform: scale(1.04);
+    }
+
+    .basicLightbox {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .basicLightbox img {
+        display: block;
+        max-width: 90vw;
+        max-height: 90vh;
+        object-fit: contain;
+    }
